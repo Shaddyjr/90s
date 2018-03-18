@@ -72,7 +72,7 @@
                                         <h3>Lewinski Scandal</h3>
                                     </a>
                                         <p>
-                                            The Clinton–Lewinsky scandal was an American political sex scandal that involved 49-year-old President Bill Clinton and 22-year-old White House intern Monica Lewinsky. The sexual relationship took place between 1995 and 1997 and came to light in 1998. Clinton ended a televised speech with the statement that he "did not have sexual relations" with Lewinsky. Further investigation led to charges of perjury and to the impeachment of President Clinton in 1998 by the U.S. House of Representatives. He was subsequently acquitted on all impeachment charges of perjury and obstruction of justice in a 21-day Senate trial.[1] Clinton was held in civil contempt of court by Judge Susan Webber Wright for giving misleading testimony in the Paula Jones case regarding Lewinsky[2] and was also fined $90,000 by Wright.[3] His license to practice law was suspended in Arkansas for five years; shortly thereafter, he was disbarred from presenting cases in front of the United States Supreme Court.
+                                            The Clinton–Lewinsky scandal was an American political sex scandal that involved 49-year-old President Bill Clinton and 22-year-old White House intern Monica Lewinsky. The sexual relationship took place between 1995 and 1997 and came to light in 1998. Clinton ended a televised speech with the statement that he "did not have sexual relations" with Lewinsky. Further investigation led to charges of perjury and to the impeachment of President Clinton in 1998 by the U.S. House of Representatives. He was subsequently acquitted on all impeachment charges of perjury and obstruction of justice in a 21-day Senate trial. Clinton was held in civil contempt of court by Judge Susan Webber Wright for giving misleading testimony in the Paula Jones case regarding Lewinsky and was also fined $90,000 by Wright. His license to practice law was suspended in Arkansas for five years; shortly thereafter, he was disbarred from presenting cases in front of the United States Supreme Court.
                                         </p>
                                     </div>
                             </section>
@@ -83,7 +83,7 @@
                                         <h3>AOL taking the world by storm!</h3>
                                     </a>
                                         <p>
-                                                AOL (formerly a company known as AOL Inc., originally known as America Online, and stylized as Aol.) is a web portal and online service provider based in New York. It is a brand marketed by Oath, a subsidiary of Verizon Communications. AOL was one of the early pioneers of the Internet in the mid-1990s, and the most recognized brand on the web in the United States. It originally provided a dial-up service to millions of Americans, as well as providing a web portal, e-mail, instant messaging and later a web browser following its purchase of Netscape. At the height of its popularity, it purchased the media conglomerate Time Warner in the largest merger in U.S. history. AOL rapidly declined thereafter, partly due to the decline of dial-up to broadband.[2] AOL was eventually spun off from Time Warner in 2009, with Tim Armstrong appointed the new CEO. Under his leadership, the company invested in media brands and advertising technologies.
+                                                AOL (formerly a company known as AOL Inc., originally known as America Online, and stylized as Aol.) is a web portal and online service provider based in New York. It is a brand marketed by Oath, a subsidiary of Verizon Communications. AOL was one of the early pioneers of the Internet in the mid-1990s, and the most recognized brand on the web in the United States. It originally provided a dial-up service to millions of Americans, as well as providing a web portal, e-mail, instant messaging and later a web browser following its purchase of Netscape. At the height of its popularity, it purchased the media conglomerate Time Warner in the largest merger in U.S. history. AOL rapidly declined thereafter, partly due to the decline of dial-up to broadband. AOL was eventually spun off from Time Warner in 2009, with Tim Armstrong appointed the new CEO. Under his leadership, the company invested in media brands and advertising technologies.
                                         </p>
                                     </div>
                             </section>
@@ -113,7 +113,49 @@
                             <div class="chatroom-container">
                                 
                             </div>
-
+                                <div class="message-container">
+                                    <div class="text">
+                                        <p>Username:</p>
+                                        <input id="username" type="text">
+                                    </div>
+                                    <div class="text">
+                                        <p>Message:</p>
+                                        <input id="message" type="text">
+                                        <div class="custom">
+                                            <div class="font">
+                                                <p>Font:</p>
+                                                <select>
+                                                    <option value="A">Ariel</option>
+                                                    <option value="B">Comic Sans</option>
+                                                    <option value="C">Sans-serif</option>
+                                                    <option value="D">Pix</option>
+                                                </select>
+                                            </div>
+                                            <div class="color">
+                                                    <p>Color:</p>
+                                                    <select>
+                                                        <option value="E">Black</option>
+                                                        <option value="F">Red</option>
+                                                        <option value="G">Blue</option>
+                                                        <option value="H">Green</option>
+                                                    </select>
+                                            </div>
+                                            <div class="styling">
+                                                    <p>Accents:</p>
+                                                    <select>
+                                                        <option value="I">None</option>
+                                                        <option value="J">Bold</option>
+                                                        <option value="K">Italics</option>
+                                                        <option value="L">Underlined</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>&nbsp;</p>
+                                        <button onclick=sendMessage()>Submit</button>
+                                    </div>
+                                </div>
                         </div>
                     </li>
                 </ul>
@@ -156,6 +198,21 @@
     <!-- <script src="./lib/js/p5.js"></script> -->
     <!-- <script src="./lib/js/p5.dom.min.js"></script> -->
 
+    <!-- firebase (for messaging feature)-->
+    
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyB4GeyiRTmZjrmV-HlVylKL_1VtrlNFq1A",
+        authDomain: "sthrowback-198420.firebaseapp.com",
+        databaseURL: "https://sthrowback-198420.firebaseio.com",
+        projectId: "sthrowback-198420",
+        storageBucket: "",
+        messagingSenderId: "557565334474"
+    };
+    firebase.initializeApp(config);
+    </script>
     <!-- custom -->
     <script src="./lib/js/mahdi.js"></script>
     <script src="./lib/js/main.js"></script>

@@ -23,6 +23,11 @@
     src: url(../../assets/fonts/READ_0.ttf);
 }
 
+@font-face {
+    font-family: "comic sans";
+    src: url(../../assets/fonts/COMIC.TTF);
+}
+
 
 body {
     overflow-x: hidden;
@@ -409,5 +414,59 @@ left: -78px;
 }
 
 .chatroom-container{
-    
+    overflow-y: scroll;
+    background: #eeeeee;
+    height: 600px;
+    width: 100%;
+}
+
+.message-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.message-container .text{
+    margin-right: 10px;
+}
+.text p{
+    text-align: left;
+}
+.message-container .text:first-child{
+    width: 200px;
+}
+input{
+    width: 100%;
+}
+.message-container .text:nth-child(2){
+    flex-grow: 1;
+}
+
+.message-container button{
+    width: 100px;
+}
+
+.custom{
+    display:flex;
+    flex-direction: row;
+}
+
+.chatroom-container div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 5px 10px;
+}
+
+.chatroom-container div p:first-child{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    width: 150px;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.chatroom-container div p:last-child{
+    overflow-wrap: break-word;
+    text-align: left;    
 }
